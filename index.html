@@ -29,9 +29,11 @@
       
       <div class="col-sm-6 col-md-4 col-lg-3 col-xs-4">
         <div class="thumbnail">
-        
-          <img {{bind-attr src=this.thumbnail}} class="img-rounded">
-      
+          
+          {{#link-to 'movie' this.name}}
+            <img {{bind-attr src=this.thumbnail}} class="img-rounded">
+          {{/link-to}}
+
           <div class="caption">
             <h3>{{this.title}}</h3>
             <p>{{this.synopsis}}</p>
@@ -42,6 +44,13 @@
            
       {{/each}}
     </div>    
+    </div>
+  </script>
+
+  <script type="text/x-handlebars" id="movie">
+    <div class="container jumbotron">
+      <h1>{{title}}</h1>
+      <p>{{synopsis}}</p>
     </div>
   </script>
 
