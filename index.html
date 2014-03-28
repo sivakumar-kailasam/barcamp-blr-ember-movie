@@ -20,9 +20,38 @@
   <script type="text/x-handlebars" id="index">
     <p>This is the index route</p>
   </script>
-  
+
+  <script type="text/x-handlebars" id="movies/index">
+  <div class="container">
+    <div class="row">
+      {{#each model}}
+        
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xs-4">
+        <div class="thumbnail">
+        
+          <img {{bind-attr src=this.thumbnail}} class="img-rounded">
+      
+          <div class="caption">
+            <h3>{{this.title}}</h3>
+            <p>{{this.synopsis}}</p>
+          </div>
+        </div>
+      </div>
+    
+           
+      {{/each}}
+    </div>    
+    </div>
+  </script>
+
   <script type="text/x-handlebars" id="loading">
     <p>This is the loading route</p>
+  </script>
+
+
+  <script type="text/x-handlebars" id="about">
+    <p>Made by <a href="http://github.com/sivakumar-kailasam" target="_blank">Sivakumar Kailasam</a></p>
   </script>
 
   <script src="js/libs/jquery-1.10.2.js"></script>
