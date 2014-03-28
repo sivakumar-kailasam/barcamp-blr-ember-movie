@@ -2,17 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ember demo @ barcamp bangalore</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootflat.css">
 </head>
 <body>
   <script type="text/x-handlebars">
+    <div class="page-header">
+      <h3>Ember movie app </h3>
+    </div>
     
+    {{outlet}}
+
   </script>
 
   <script type="text/x-handlebars" id="index">
-    
+    <p>This is the index route</p>
+  </script>
+  
+  <script type="text/x-handlebars" id="loading">
+    <p>This is the loading route</p>
   </script>
 
   <script src="js/libs/jquery-1.10.2.js"></script>
