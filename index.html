@@ -10,7 +10,9 @@
 <body>
   <script type="text/x-handlebars">
     <div class="page-header">
+      {{#link-to 'movies.index'}}
       <h3>Ember movie app </h3>
+      {{/link-to}}
     </div>
     
     {{outlet}}
@@ -52,6 +54,35 @@
       <h1>{{title}}</h1>
       <p>{{synopsis}}</p>
     </div>
+
+      <div class="container">
+
+        {{#if isCommentsNotEmpty}}
+        <h3>Comments</h3>
+        {{/if}}
+
+        {{#each comment in comments}}
+          <div class="alert alert-success">
+          <p>{{comment}}</p>
+          </div>
+        {{/each}}
+      </div>
+
+      <div class="container">
+          <h4>Got some comments, write here!</h4>
+          <div class="form-group">
+            {{textarea value=someComment class="form-control"}}
+          </div>
+          <button class="btn btn-info btn-md" {{action 'addComment'}}>Submit</button>
+
+          <div class="container">
+            <h4>Preview</h4>
+            <div class="alert alert-info">
+              {{someComment}}
+            </div>
+          </div>
+      </div>
+
   </script>
 
   <script type="text/x-handlebars" id="loading">
