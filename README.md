@@ -1,5 +1,15 @@
-starter-kit
-===========
+DEMO NOTES
+==========
+Browse through https://github.com/sivakumar-kailasam/barcamp-blr-ember-movie/commits/master one commit at a time to understand how this was built
+
+
+
+
+
+
+
+Ember Starter kit Readme
+========================
 
 A starter kit for Ember
 
