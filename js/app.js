@@ -10,3 +10,11 @@ window.App = Ember.Application.create({
 
   // For more log/debug flags refer to http://emberjs.com/guides/understanding-ember/debugging/
 });
+
+
+App.Router.map(function() {
+	this.resource('about');
+	this.resource('movies', function() {
+		this.resource('movie', { path : ':movie_name'});
+	});
+});
