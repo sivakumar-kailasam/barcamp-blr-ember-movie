@@ -3,7 +3,7 @@ DEMO NOTES
 
 Browse through https://github.com/sivakumar-kailasam/barcamp-blr-ember-movie/commits/master one commit at a time to understand how this was built
 
-Or view the [tags page|https://github.com/sivakumar-kailasam/barcamp-blr-ember-movie/releases]
+Or you might be interested in viewing the tags: https://github.com/sivakumar-kailasam/barcamp-blr-ember-movie/releases
 
 
 
